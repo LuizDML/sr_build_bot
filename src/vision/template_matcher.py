@@ -91,7 +91,7 @@ class TemplateMatcher:
         matches=[]
 
         for template_name in self.templates.keys():
-            if template_name.startswith(category + '_')
+            if template_name.startswith(category + '_'):
                 result = self.find_template(screenshot, template_name, threshold)
                 if result['found']:
                     matches.append(result)
